@@ -26,7 +26,15 @@ npm install
 node index.js
 ```
 ⚠️ Ethical Notice
-This project is for learning purposes only. Do not deploy or modify this code for malicious activities. Always follow legal and ethical guidelines when working with web automation.
+This project is for learning purposes only. It is designed to demonstrate web automation techniques using Node.js and Puppeteer.
+
+❗ Disclaimer:
+The developer is not responsible for any misuse or harmful activities resulting from this project. Users are solely accountable for how they use this code.
+
+Do NOT deploy, modify, or distribute this project for malicious purposes.
+Always follow legal and ethical guidelines when working with web automation.
+This project should never be used for phishing or any form of cybercrime.
+
 
 📂 Tags
 #nodejs
