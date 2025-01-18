@@ -15,6 +15,12 @@ Educational Example: Shows how phishing pages can mimic real websites for awaren
 🛠️ Technologies Used
 Node.js – Server-side JavaScript runtime.
 Puppeteer – Browser automation library.
+
+## 🎬 Watch the Video
+
+[![PayPal Login Automation with Node.js & Puppeteer](https://img.youtube.com/vi/FAuuh6wz1I0/0.jpg)](https://www.youtube.com/watch?v=FAuuh6wz1I0)
+
+
 ⚙️ Installation
 ```bash
 git clone https://github.com/Pjdwsazzad/paypal-login-automation-with-phising-page.git
